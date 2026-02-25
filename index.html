@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroFarm Indonesia - Solusi Pertanian Modern</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+	
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-700 font-sans">
+
+<!-- ================= NAVBAR ================= -->
+<header class="fixed w-full bg-white/90 backdrop-blur-md shadow z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-green-700">AgroFarm</h1>
+
+    <nav id="menu" class="hidden md:flex space-x-8 font-medium">
+      <a href="#home" class="hover:text-green-600 transition">Home</a>
+      <a href="#about" class="hover:text-green-600 transition">Tentang</a>
+      <!-- Dropdown -->
+  <div class="relative group">
+    <button class="flex items-center gap-1 hover:text-green-600 transition">
+      Produk
+      <ion-icon name="chevron-down-outline" class="text-sm"></ion-icon>
+    </button>
+
+    <!-- Dropdown Menu -->
+    <div class="absolute left-0 mt-3 w-48 bg-white shadow-xl rounded-xl
+                opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                transition duration-300">
+
+      <a href="#" class="block px-4 py-3 hover:bg-green-50 rounded-t-xl">
+        Pupuk Premium
+      </a>
+      <a href="#" class="block px-4 py-3 hover:bg-green-50">
+        Benih Unggul
+      </a>
+      <a href="#" class="block px-4 py-3 hover:bg-green-50 rounded-b-xl">
+        Alat Pertanian
+      </a>
+
+    </div>
+  </div>
+      <a href="#team" class="hover:text-green-600 transition">Tim Kami</a>
+      <a href="#testimonial" class="hover:text-green-600 transition">Testimoni</a>
+      <a href="#faq" class="hover:text-green-600 transition">FAQ</a>
+      <a href="#contact" class="hover:text-green-600 transition">Kontak</a>
+    </nav>
+
+    <button id="menu-btn" class="md:hidden text-3xl text-green-700">
+      <ion-icon name="menu-outline"></ion-icon>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-4 bg-white">
+    <a href="#home" class="block">Home</a>
+    <a href="#about" class="block">Tentang</a>
+ <!-- Mobile Dropdown -->
+  <div>
+    <button id="mobileDropdownBtn"
+            class="flex justify-between items-center w-full">
+      Produk
+      <ion-icon id="mobileDropdownIcon"
+                name="chevron-down-outline"
+                class="transition-transform"></ion-icon>
+    </button>
+
+    <div id="mobileDropdownMenu"
+         class="hidden mt-2 pl-4 space-y-2 text-gray-600">
+
+      <a href="#" class="block">Pupuk Premium</a>
+      <a href="#" class="block">Benih Unggul</a>
+      <a href="#" class="block">Alat Pertanian</a>
+
+    </div>
+  </div>
+    <a href="#testimonial" class="block">Testimoni</a>
+    <a href="#contact" class="block">Kontak</a>
+  </div>
+</header>
+
+<!-- ================= HERO GRADIENT PREMIUM ================= -->
+<section id="home" class="min-h-screen flex items-center relative overflow-hidden pt-24">
+
+  <!-- Background Gradient -->
+  <div class="absolute inset-0 bg-gradient-to-br from-green-600 via-emerald-500 to-green-800"></div>
+
+  <!-- Decorative Blur Circle -->
+  <div class="absolute -top-32 -left-32 w-96 h-96 bg-green-400 opacity-30 rounded-full blur-3xl"></div>
+  <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-emerald-300 opacity-20 rounded-full blur-3xl"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center text-white">
+
+    <div data-aos="fade-right">
+      <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+        Solusi
+        <span class="bg-gradient-to-r from-yellow-300 to-lime-200 bg-clip-text text-transparent">
+          Pertanian Modern
+        </span>
+        untuk Masa Depan
+      </h2>
+
+      <p class="mb-8 text-lg text-green-100">
+        Distributor pupuk, benih unggul, dan alat pertanian berkualitas
+        dengan standar profesional untuk meningkatkan hasil panen Anda.
+      </p>
+
+      <div class="flex flex-wrap gap-4">
+
+        <!-- Primary Button -->
+        <a href="#products"
+           class="px-8 py-3 rounded-full font-semibold
+                  bg-gradient-to-r from-yellow-400 to-lime-400
+                  text-green-900 shadow-lg
+                  hover:scale-105 hover:shadow-2xl
+                  transition duration-300">
+          Lihat Produk
+        </a>
+
+        <!-- Secondary Button -->
+        <a href="#contact"
+           class="px-8 py-3 rounded-full font-semibold border border-white
+                  hover:bg-white hover:text-green-800
+                  transition duration-300">
+          Konsultasi Gratis
+        </a>
+
+      </div>
+    </div>
+
+    <div data-aos="fade-left">
+      <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854"
+           class="rounded-2xl shadow-2xl hover:scale-105 transition duration-500">
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= PARALLAX SECTION ================= -->
+<section class="relative h-[60vh] flex items-center justify-center text-center text-white">
+  
+  <div class="absolute inset-0 bg-fixed bg-center bg-cover"
+       style="background-image: url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854');">
+  </div>
+
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <div class="relative z-10 px-6" data-aos="fade-up">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">
+      Solusi Pertanian Berkelanjutan
+    </h2>
+    <p class="max-w-2xl mx-auto text-lg text-green-100">
+      Teknologi modern untuk hasil panen maksimal dan masa depan pertanian Indonesia.
+    </p>
+  </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6 text-center" data-aos="fade-up">
+    <h3 class="text-3xl font-bold text-green-800 mb-6">Tentang Perusahaan</h3>
+    <p class="max-w-3xl mx-auto text-gray-600 leading-relaxed">
+      AgroFarm adalah perusahaan distribusi produk pertanian modern yang telah melayani
+      ratusan mitra di seluruh Indonesia dengan standar kualitas terbaik.
+    </p>
+  </div>
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+<section id="products" class="py-20 bg-green-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center text-green-800 mb-12" data-aos="fade-up">
+      Produk Unggulan
+    </h3>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-6 text-center"
+           data-aos="fade-up" data-aos-delay="100">
+        <ion-icon name="leaf-outline" class="text-5xl text-green-600 mb-4"></ion-icon>
+        <h4 class="text-xl font-semibold mb-2">Pupuk Premium</h4>
+        <p>Formula modern untuk hasil panen maksimal.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-6 text-center"
+           data-aos="fade-up" data-aos-delay="200">
+        <ion-icon name="nutrition-outline" class="text-5xl text-green-600 mb-4"></ion-icon>
+        <h4 class="text-xl font-semibold mb-2">Benih Unggul</h4>
+        <p>Tahan hama & hasil lebih produktif.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-6 text-center"
+           data-aos="fade-up" data-aos-delay="300">
+        <ion-icon name="construct-outline" class="text-5xl text-green-600 mb-4"></ion-icon>
+        <h4 class="text-xl font-semibold mb-2">Alat Modern</h4>
+        <p>Efisien & mempercepat proses pertanian.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRODUCT IMAGE SLIDER ================= -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <h3 class="text-3xl font-bold text-green-800 mb-12" data-aos="fade-up">
+      Galeri Produk Kami
+    </h3>
+
+    <div class="relative overflow-hidden rounded-2xl shadow-xl">
+
+      <div id="productSlider" class="flex transition-transform duration-700">
+
+        <img src="https://images.unsplash.com/photo-1589927986089-35812388d1f4"
+             class="min-w-full object-cover h-[400px]" />
+
+        <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9"
+             class="min-w-full object-cover h-[400px]" />
+
+        <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b"
+             class="min-w-full object-cover h-[400px]" />
+
+      </div>
+
+      <!-- Navigation Buttons -->
+      <button onclick="prevSlide()"
+              class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-green-700 p-3 rounded-full shadow">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </button>
+
+      <button onclick="nextSlide()"
+              class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-green-700 p-3 rounded-full shadow">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= TEAM SECTION ================= -->
+<section id="team" class="py-20 bg-green-50">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h3 class="text-3xl font-bold text-green-800 mb-4">
+        Tim Profesional Kami
+      </h3>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Didukung oleh tenaga ahli berpengalaman di bidang pertanian modern
+        untuk memberikan solusi terbaik bagi mitra kami.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- Member 1 -->
+      <div class="group relative bg-white rounded-2xl shadow-lg overflow-hidden"
+           data-aos="fade-up" data-aos-delay="100">
+
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e"
+               class="w-full h-72 object-cover group-hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="p-6 text-center">
+          <h4 class="text-lg font-semibold text-green-800">Andi Pratama</h4>
+          <p class="text-sm text-gray-500">Direktur Utama</p>
+        </div>
+
+        <!-- Overlay Social -->
+        <div class="absolute inset-0 bg-green-700/80 flex items-center justify-center
+                    opacity-0 group-hover:opacity-100 transition duration-500">
+          <div class="flex space-x-4 text-white text-2xl">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Member 2 -->
+      <div class="group relative bg-white rounded-2xl shadow-lg overflow-hidden"
+           data-aos="fade-up" data-aos-delay="200">
+
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1614283233556-f35b0c801ef1"
+               class="w-full h-72 object-cover group-hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="p-6 text-center">
+          <h4 class="text-lg font-semibold text-green-800">Sari Wijaya</h4>
+          <p class="text-sm text-gray-500">Head of Agronomy</p>
+        </div>
+
+        <div class="absolute inset-0 bg-green-700/80 flex items-center justify-center
+                    opacity-0 group-hover:opacity-100 transition duration-500">
+          <div class="flex space-x-4 text-white text-2xl">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Member 3 -->
+      <div class="group relative bg-white rounded-2xl shadow-lg overflow-hidden"
+           data-aos="fade-up" data-aos-delay="300">
+
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36"
+               class="w-full h-72 object-cover group-hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="p-6 text-center">
+          <h4 class="text-lg font-semibold text-green-800">Budi Santoso</h4>
+          <p class="text-sm text-gray-500">Operations Manager</p>
+        </div>
+
+        <div class="absolute inset-0 bg-green-700/80 flex items-center justify-center
+                    opacity-0 group-hover:opacity-100 transition duration-500">
+          <div class="flex space-x-4 text-white text-2xl">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Member 4 -->
+      <div class="group relative bg-white rounded-2xl shadow-lg overflow-hidden"
+           data-aos="fade-up" data-aos-delay="400">
+
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1603415526960-f7e0328d5b6a"
+               class="w-full h-72 object-cover group-hover:scale-110 transition duration-500">
+        </div>
+
+        <div class="p-6 text-center">
+          <h4 class="text-lg font-semibold text-green-800">Dewi Lestari</h4>
+          <p class="text-sm text-gray-500">Marketing Manager</p>
+        </div>
+
+        <div class="absolute inset-0 bg-green-700/80 flex items-center justify-center
+                    opacity-0 group-hover:opacity-100 transition duration-500">
+          <div class="flex space-x-4 text-white text-2xl">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS COUNTER ================= -->
+<section class="py-20 bg-gradient-to-r from-green-600 to-green-700 text-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid md:grid-cols-4 gap-8 text-center">
+
+      <div data-aos="fade-up">
+        <h3 class="text-4xl font-bold counter" data-target="500">0</h3>
+        <p class="mt-2 text-green-100">Petani Mitra</p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-4xl font-bold counter" data-target="120">0</h3>
+        <p class="mt-2 text-green-100">Produk Tersedia</p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-4xl font-bold counter" data-target="15">0</h3>
+        <p class="mt-2 text-green-100">Tahun Pengalaman</p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-4xl font-bold counter" data-target="98">0</h3>
+        <p class="mt-2 text-green-100">Kepuasan (%)</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIAL ================= -->
+<section id="testimonial" class="py-20 bg-white">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold text-green-800 mb-12" data-aos="fade-up">
+      Apa Kata Mitra Kami
+    </h3>
+
+    <div class="relative overflow-hidden">
+      <div id="slider" class="flex transition-transform duration-700">
+
+        <div class="min-w-full px-6">
+          <p class="text-lg italic">"Produk sangat berkualitas dan pengiriman cepat."</p>
+          <h4 class="mt-4 font-semibold text-green-700">Budi - Petani Padi</h4>
+        </div>
+
+        <div class="min-w-full px-6">
+          <p class="text-lg italic">"Benih unggulnya terbukti meningkatkan hasil panen."</p>
+          <h4 class="mt-4 font-semibold text-green-700">Sari - Petani Sayur</h4>
+        </div>
+
+        <div class="min-w-full px-6">
+          <p class="text-lg italic">"Pelayanan profesional & harga kompetitif."</p>
+          <h4 class="mt-4 font-semibold text-green-700">Andi - Distributor</h4>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ SECTION ================= -->
+<section id="faq" class="py-20 bg-white">
+  <div class="max-w-4xl mx-auto px-6">
+
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h3 class="text-3xl font-bold text-green-800 mb-4">
+        Pertanyaan yang Sering Diajukan
+      </h3>
+      <p class="text-gray-600">
+        Berikut beberapa pertanyaan umum mengenai produk dan layanan kami.
+      </p>
+    </div>
+
+    <div class="space-y-4">
+
+      <!-- FAQ Item -->
+      <div class="border rounded-xl overflow-hidden shadow-sm" data-aos="fade-up" data-aos-delay="100">
+        <button class="faq-toggle w-full flex justify-between items-center p-5 text-left font-semibold text-green-800">
+          Apakah produk AgroFarm tersedia di seluruh Indonesia?
+          <ion-icon name="chevron-down-outline" class="transition-transform duration-300"></ion-icon>
+        </button>
+        <div class="faq-content hidden px-5 pb-5 text-gray-600">
+          Ya, kami melayani pengiriman ke seluruh wilayah Indonesia melalui mitra distribusi resmi kami.
+        </div>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="border rounded-xl overflow-hidden shadow-sm" data-aos="fade-up" data-aos-delay="200">
+        <button class="faq-toggle w-full flex justify-between items-center p-5 text-left font-semibold text-green-800">
+          Apakah tersedia konsultasi pertanian?
+          <ion-icon name="chevron-down-outline" class="transition-transform duration-300"></ion-icon>
+        </button>
+        <div class="faq-content hidden px-5 pb-5 text-gray-600">
+          Kami menyediakan layanan konsultasi gratis untuk membantu meningkatkan produktivitas pertanian Anda.
+        </div>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="border rounded-xl overflow-hidden shadow-sm" data-aos="fade-up" data-aos-delay="300">
+        <button class="faq-toggle w-full flex justify-between items-center p-5 text-left font-semibold text-green-800">
+          Bagaimana cara melakukan pemesanan?
+          <ion-icon name="chevron-down-outline" class="transition-transform duration-300"></ion-icon>
+        </button>
+        <div class="faq-content hidden px-5 pb-5 text-gray-600">
+          Anda dapat melakukan pemesanan melalui form kontak di website atau menghubungi tim marketing kami secara langsung.
+        </div>
+      </div>
+
+      <!-- FAQ Item -->
+      <div class="border rounded-xl overflow-hidden shadow-sm" data-aos="fade-up" data-aos-delay="400">
+        <button class="faq-toggle w-full flex justify-between items-center p-5 text-left font-semibold text-green-800">
+          Apakah produk memiliki sertifikasi resmi?
+          <ion-icon name="chevron-down-outline" class="transition-transform duration-300"></ion-icon>
+        </button>
+        <div class="faq-content hidden px-5 pb-5 text-gray-600">
+          Semua produk kami telah melalui uji kualitas dan memiliki sertifikasi sesuai standar pertanian nasional.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-20 bg-green-700 text-white">
+  <div class="max-w-4xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-8">Konsultasi & Pemesanan</h3>
+
+    <form class="grid md:grid-cols-2 gap-6 bg-white text-gray-700 p-8 rounded-xl shadow-lg">
+      <input type="text" placeholder="Nama Lengkap" class="p-3 border rounded-lg" required>
+      <input type="email" placeholder="Email" class="p-3 border rounded-lg" required>
+      <input type="text" placeholder="No. Telepon" class="p-3 border rounded-lg md:col-span-2">
+      <textarea placeholder="Pesan Anda..." rows="4" class="p-3 border rounded-lg md:col-span-2"></textarea>
+      <button class="md:col-span-2 bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition">
+        Kirim Pesan
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-green-900 text-green-200 pt-12 pb-6">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid md:grid-cols-3 gap-10 mb-10">
+
+      <!-- Company Info -->
+      <div>
+        <h2 class="text-2xl font-bold text-white mb-4">AgroFarm</h2>
+        <p class="text-green-300">
+          Perusahaan distribusi produk pertanian modern yang mendukung
+          produktivitas petani Indonesia dengan kualitas terbaik.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-4">Navigasi</h3>
+        <ul class="space-y-2">
+          <li><a href="#home" class="hover:text-white transition">Home</a></li>
+          <li><a href="#about" class="hover:text-white transition">Tentang</a></li>
+          <li><a href="#products" class="hover:text-white transition">Produk</a></li>
+          <li><a href="#contact" class="hover:text-white transition">Kontak</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-4">Ikuti Kami</h3>
+
+        <div class="flex space-x-4 text-2xl">
+
+          <a href="#" class="hover:text-white hover:scale-110 transition transform duration-300">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+
+          <a href="#" class="hover:text-white hover:scale-110 transition transform duration-300">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+
+          <a href="#" class="hover:text-white hover:scale-110 transition transform duration-300">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+
+          <a href="#" class="hover:text-white hover:scale-110 transition transform duration-300">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+
+          <a href="#" class="hover:text-white hover:scale-110 transition transform duration-300">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="border-t border-green-800 pt-6 text-center text-green-400 text-sm">
+      © 2026 AgroFarm Indonesia. All Rights Reserved.
+    </div>
+
+  </div>
+</footer>
+
+<!-- ================= SCRIPT ================= -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+
+  // Mobile Menu Toggle
+  const btn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  btn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Testimonial Slider
+  const slider = document.getElementById('slider');
+  let index = 0;
+  setInterval(() => {
+    index = (index + 1) % 3;
+    slider.style.transform = `translateX(-${index * 100}%)`;
+  }, 4000);
+
+ // Counter Animation
+  const counters = document.querySelectorAll('.counter');
+  const speed = 200;
+
+  const startCounter = (counter) => {
+    const target = +counter.getAttribute('data-target');
+    const increment = target / speed;
+
+    const updateCount = () => {
+      const count = +counter.innerText;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(updateCount, 10);
+      } else {
+        counter.innerText = target + (target === 98 ? '%' : '+');
+      }
+    };
+
+    updateCount();
+  };
+
+  // Run when visible (scroll trigger)
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        startCounter(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.7 });
+
+  counters.forEach(counter => {
+    observer.observe(counter);
+  });
+
+ // PRODUCT IMAGE SLIDER
+  const productSlider = document.getElementById('productSlider');
+  let productIndex = 0;
+  const totalSlides = 3;
+
+  function showSlide(index) {
+    productSlider.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    productIndex = (productIndex + 1) % totalSlides;
+    showSlide(productIndex);
+  }
+
+  function prevSlide() {
+    productIndex = (productIndex - 1 + totalSlides) % totalSlides;
+    showSlide(productIndex);
+  }
+
+  // Auto Slide
+  setInterval(() => {
+    nextSlide();
+  }, 5000);
+
+const toggles = document.querySelectorAll('.faq-toggle');
+
+  toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+
+      const content = toggle.nextElementSibling;
+      const icon = toggle.querySelector('ion-icon');
+
+      content.classList.toggle('hidden');
+      icon.classList.toggle('rotate-180');
+
+    });
+  });
+
+// Mobile Dropdown Toggle
+  const mobileDropdownBtn = document.getElementById('mobileDropdownBtn');
+  const mobileDropdownMenu = document.getElementById('mobileDropdownMenu');
+  const mobileDropdownIcon = document.getElementById('mobileDropdownIcon');
+
+  mobileDropdownBtn.addEventListener('click', () => {
+    mobileDropdownMenu.classList.toggle('hidden');
+    mobileDropdownIcon.classList.toggle('rotate-180');
+  });
+</script>
+
+</body>
+</html>
